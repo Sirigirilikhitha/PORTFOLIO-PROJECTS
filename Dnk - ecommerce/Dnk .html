@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #logdiv {
+        margin: 10px;
+      }
+
+      .navbar {
+        display: flex;
+      }
+      ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        gap: 30px;
+      }
+      #link {
+        display: flex;
+        gap: 500px;
+        height: 100%;
+        padding: 30px;
+      }
+      #logdiv {
+        flex: 0.2;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      header {
+        background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/home-new-bg-free-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-attachment: fixed;
+      }
+      #rain {
+        padding: 200px 100px;
+      }
+      #rain h1 {
+        font-size: 60px;
+        width: 500px;
+        color: white;
+        padding-bottom: 20px;
+      }
+      #rain p {
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        color: white;
+      }
+      #rain button {
+        background-color: #165976;
+        padding: 15px 32px;
+        color: white;
+      }
+      #rain button:hover {
+        background-color: white;
+        color: black;
+      }
+      .nav2 {
+        margin-top: 10px;
+        display: flex;
+        flex: 1;
+        width: 100%;
+
+        /* justify-content:space-between; */
+      }
+      #train {
+        background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 30px;
+        height: 500px;
+        width: 350px;
+        margin-left: 180px;
+
+        /* padding-left:10px ; */
+        /* margin: auto; */
+      }
+      #train2 {
+        background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 30px;
+        height: 500px;
+        width: 350px;
+        margin-left: 10px;
+      }
+      #train3 {
+        background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/footwear-free-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 30px;
+        height: 500px;
+        width: 350px;
+        margin-left: 10px;
+      }
+      #train h1 {
+        font-size: 40px;
+        margin-top: 250px;
+        color: white;
+      }
+      #train p {
+        font-size: 20px;
+
+        color: white;
+      }
+      #train button {
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+      #train button:hover {
+        background-color: #165976;
+      }
+      #train2 h1 {
+        font-size: 40px;
+        margin-top: 250px;
+        color: white;
+      }
+      #train2 p {
+        font-size: 20px;
+        color: white;
+      }
+      #train2 button {
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+      #train2 button:hover {
+        background-color: #165976;
+      }
+      #train3 h1 {
+        font-size: 40px;
+        margin-top: 250px;
+        color: white;
+      }
+      #train3 p {
+        font-size: 20px;
+        color: white;
+      }
+      #train3 button {
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+      #train3 button:hover {
+        background-color: #165976;
+      }
+      #main h1 {
+        font-size: 50px;
+        text-align: center;
+        height: 100px;
+        margin-top: 180px;
+      }
+      #div1 {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px 300px;
+        grid-template-rows: 420px;
+        padding: 10px;
+        gap: 10px;
+      }
+      #div2 h2 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div2 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div3 h2 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div3 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div4 h2 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div4 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div5 h2 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div5 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div6 h1 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div6 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div7 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 100px;
+        height: 100px;
+      }
+      #div8 {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px 300px;
+        grid-template-rows: 420px;
+        padding: 10px;
+        gap: 20px;
+      }
+      #div9 h1 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div9 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div10 h1 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div10 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div11 h1 {
+        margin-left: 20px;
+        font-size: 40px;
+      }
+      #div11 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+
+      #div12 h1 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div12 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div13 h1 {
+        margin-left: 20px;
+        font-size: 35px;
+      }
+      #div13 p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      #div14 {
+        width: 100%;
+        height: 100px;
+      }
+      #div15 {
+        background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-03.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 150px;
+        background-attachment: fixed;
+      }
+      #div15 h1 {
+        font-size: 40px;
+        padding-top: 10px;
+        color: white;
+      }
+      #div15 p {
+        font-size: 30px;
+        padding-top: 10px;
+        color: white;
+      }
+      #div15 h3 {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+      }
+      #div15 button {
+        padding: 20px 30px;
+        padding-top: 10px;
+      }
+      #div16 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 250px;
+        height: 250px;
+        padding: 20px;
+        color: rgba(30, 27, 27, 0.633);
+        margin-left: 200px;
+        margin-top: 80px;
+        margin-right: 100px;
+      }
+      #div17-1{
+        border-bottom: 1px solid;
+        border-top:1px solid ;
+      }
+      #div17 h3 {
+        font-weight: bold;
+        color: black;
+      }
+
+      #div17-1 h1 {
+        padding-left: 250px;
+        background-color: rgb(246, 235, 235);
+        color: black;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom:30px;
+        
+      }
+      #div17-1 h1:hover {
+        color: #165976;
+      }
+  
+      /* #div19 h1{
+            padding: 20px;
+            color: black;
+        }
+        #div19 ul li{
+            margin-left:30px ;
+            color: black;
+        }
+        #div19 ul li:hover{
+            color:rgb(104, 12, 190);
+        }
+        #div19 button:hover{
+            background-color: darkslateblue;
+        }
+        #div19 {
+            /* margin-top: 50px; */
+            /* height: 300px;
+            size:cover;
+        } */
+        #div19 ul{
+          display: block;
+          
+        } 
+        /* #div19 li{
+          display: flex;
+        } */
+        #div18{
+          display: flex;
+          justify-content: space-around;
+         
+          height:200px;
+          padding:70px;
+          background-color: whitesmoke;
+          border-bottom: 1px solid;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="navbar">
+          <div id="logdiv">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/logo1-free-img.png"
+            />
+          </div>
+          <nav id="link">
+            <ul>
+              <li><a href="#everything">EVERYTHING</a></li>
+              <li><a href="#">WOMEN</a></li>
+              <li><a>MEN</a></li>
+              <li><a>ACCESSORIES</a></li>
+            </ul>
+            <ul>
+              <li><a>ABOUT</a></li>
+              <li><a>CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div  class='everything'id="rain">
+          <h1>Raining Offers for Hot Summer!</h1>
+          <p>25% Of ON All Products</p>
+          <button>SHOP NOW</button>
+          <button>FIND MORE</button>
+        </div>
+        <div class="nav2">
+          <div id="train">
+            <h1>20% Off On Tank Tops</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Proin ac
+              dictum
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+          <div id="train2">
+            <h1>Latest Eye Wear for You</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Proin ac
+              dictum
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+          <div id="train3">
+            <h1>Let's Lorem Suit Up!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Proin ac
+              dictum
+            </p>
+            <button>Check Out</button>
+          </div>
+        </div>
+        <div id="main">
+          <h1>Featured Products</h1>
+        </div>
+        <div id="div1">
+          <div id="div2" style="margin-left: 30px">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-400x400.jpg"
+              height="300px"
+            />
+            <h2>Yellow Shoes</h2>
+            <p style="padding-top: 30px">
+              Price: $29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div3" style="margin-left: 30px">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe1-300x300.jpg"
+              height="300px"
+            />
+            <h2>BLUE shoes</h2>
+            <p style="padding-top: 30px">
+              Price: $29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div4" style="margin-left: 30px">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans1-400x400.jpg"
+              height="300px"
+            />
+            <h2>Brown jeans</h2>
+            <p style="padding-top: 30px">
+              Price: $29.99<button style="padding: 10px 20px">
+                Add to Cart
+              </button>
+            </p>
+          </div>
+          <div id="div5" style="margin-left: 30px">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans2-400x400.jpg"
+              height="300px"
+            />
+            <h2>Blue Jeans</h2>
+            <p style="padding-top: 30px">
+              Price: $29.99<button style="padding: 10px 20px">
+                Add to Cart
+              </button>
+            </p>
+          </div>
+          <div id="div6" style="margin-left: 30px">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans4-400x400.jpg"
+              height="300px"
+            />
+            <h1>Grey jeans</h1>
+            <p style="padding-top: 30px">
+              Price: $29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+        </div>
+        <div id="div7">
+          <h1>Trending Products</h1>
+        </div>
+
+        <div id="div8">
+          <div id="div9">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans1-400x400.jpg"
+              height="300px"
+            />
+            <h1>Blue Shorts</h1>
+            <p style="padding-top: 30px">
+              Price:$29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div10">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory2-400x400.jpg"
+              height="300px"
+            />
+            <h1>Anchor Bracelet</h1>
+            <p style="padding-top: 30px">
+              Price:$29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div11">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory1-400x400.jpg"
+              height="300px"
+            />
+            <h1>Bangle Bracelet</h1>
+            <p style="padding-top: 30px">
+              Price:$29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div12">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag1-400x400.jpg"
+              height="300px"
+            />
+            <h1>Brown Purse</h1>
+            <p style="padding-top: 30px">
+              Price:$29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+          <div id="div13">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag3-400x400.jpg"
+              height="300px"
+            />
+            <h1>Red Bag</h1>
+            <p style="padding-top: 30px">
+              Price:$29.99
+              <button style="padding: 10px 20px">Add to Cart</button>
+            </p>
+          </div>
+        </div>
+        <div id="div14"></div>
+        <div id="div15">
+          <p>Limited time Offer</p>
+          <h1>Special Eddition</h1>
+          <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit</p>
+
+          <h3>Buy This T-shirt At 20% Discount, Use Code OFF20</h3>
+          <button>SHOP NOW</button>
+        </div>
+        <div id="div16">
+          <div id="div17">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"
+            />
+            <h3>Worldwide Shipping</h3>
+            <p>
+              It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+              leo.
+            </p>
+          </div>
+          <div id="div17">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png"
+            />
+            <h3>Best Quality</h3>
+            <p>
+              It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+              leo.
+            </p>
+          </div>
+          <div id="div17">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png"
+            />
+            <h3>Best Offers</h3>
+            <p>
+              It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+              leo.
+            </p>
+          </div>
+          <div id="div17">
+            <img
+              src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png"
+            />
+            <h3>Secure Payments</h3>
+            <p>
+              It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+              leo.
+            </p>
+          </div>
+        </div>
+        <div id="div17-1">
+          <h1>
+            SALE UP TO 75% OFF FOR ALL CLOTHS AND FACTION ITEMS AND ALL BRANDS
+          </h1>
+        </div>
+        <div id="div18">
+          <div id="div19">
+            <h1>DNK</h1>
+            <p>The best look anytime,anywhere.</p>
+          </div>
+          <div id="div19">
+            <h1>FOR HER</h1>
+            <ul type=" none">
+              <li>Women Jeans</li>
+              <li>Tops and Shirts</li>
+              <li>Womens Jackets</li>
+              <li>Heals and Flats</li>
+              <li>Women Accessories</li>
+            </ul>
+          </div>
+          <div id="div19">
+            <h1>FOR HIM</h1>
+            <ul type="none">
+                <li>Mens Jeans</li>
+                <li>Mens Shirts</li>
+                <li>Mens Shoes</li>
+                <li>Mens Accessories</li>
+                <li>Mens Jacket</li>
+            </ul>
+          </div>
+         <div  id="div19">
+           <h1>SUBSCRIBE</h1>
+            <ul type="none">
+              <li><input type="text" name="Enter your Email id" placeholder="Enter Your Email"></li>
+              <li><button>SUBSCRIBE</button></li>
+          </ul>
+       </div>
+        </div>
+        
+      </header>
+    </nav>
+  </body>
+</html>
